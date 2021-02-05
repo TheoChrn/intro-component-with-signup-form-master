@@ -100,3 +100,62 @@ section{
     }
 }
 
+@media all and (min-width: 1024px){
+    #sec1, #sec2{
+        width: 45%; 
+    }
+
+    #sec1{
+        margin: auto 0;
+        text-align: start;
+
+        .learn{
+
+            &__title{
+                font-weight: 700;
+                font-size: 3.5em;
+                line-height: 70px;
+            }
+
+            &__description{
+                font-weight: 400;
+                font-size: 18px;
+                width: 90%;
+            }
+        }
+    }
+
+    #myForm{
+        padding: 28px 40px 40px 40px;
+
+        .eula{
+            flex-direction: row;
+
+            &__terms{
+                margin-left: 3px;
+            }
+
+            &__description{
+                margin: auto;
+                align-self: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .myForm__data{
+        display: flex;
+        position: relative;
+    
+        input{
+            border-radius: $border-radius;
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border: 2px solid rgba(128, 128, 128, 0.2);
+            font-weight: 500;
+            color: black;
+        }
+    }
+}
