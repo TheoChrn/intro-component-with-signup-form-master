@@ -1,0 +1,7 @@
+@mixin secondarytLighter{
+    background-color: lighten($color: $secondary-color, $amount: 10);
+}
+
+@mixin tertiarytLighter{
+    background-color: lighten($color: $tertiary-color, $amount: 10);
+}

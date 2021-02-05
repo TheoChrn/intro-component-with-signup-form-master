@@ -1,0 +1,181 @@
+/* utils */
+/* base */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: #ff7a7a;
+}
+
+body, button, input {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: inherit;
+}
+
+#container {
+  width: 375px;
+  margin: auto;
+  padding: 55px 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  font-size: 11px;
+  color: #3e52a3;
+}
+
+/* components */
+button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  background-color: inherit;
+}
+button span {
+  margin: auto;
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  width: 100%;
+}
+.btn .trial {
+  padding: 20px;
+  margin-top: 5px;
+  background-color: #6055a5;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.btn .trial:hover {
+  background-color: #7e75b8;
+}
+.btn .trial span {
+  width: 60%;
+}
+.btn .claim {
+  padding: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+  background-color: #38cc8c;
+  text-transform: uppercase;
+  box-shadow: 0 5px 0 #30bb7f;
+}
+.btn .claim:hover {
+  background-color: #61d6a3;
+  box-shadow: 0 5px 0 #4dd198;
+}
+.btn .claim span {
+  width: 100%;
+}
+
+/* pages */
+section {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+
+#sec1 {
+  text-align: center;
+}
+#sec1 .learn__title {
+  margin: 7px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+}
+#sec1 .learn__description {
+  font-weight: 400;
+  font-size: 17px;
+  margin: 25px 0 18px 0;
+}
+
+#myForm {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+#myForm .eula__terms {
+  font-weight: 600;
+  text-decoration: inherit;
+  color: #ff7a7a;
+  cursor: pointer;
+}
+#myForm .eula__description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #b9b6d3;
+}
+#myForm .eula__description, #myForm .eula strong {
+  font-size: 10px;
+}
+
+.myForm__data {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.myForm__data input {
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  margin: 6px 0;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+  font-weight: 500;
+  color: black;
+}
+.myForm__data input:focus {
+  outline: none;
+  border-color: #9d97c9;
+}
+.myForm__data input, .myForm__data input::placeholder {
+  text-indent: 20px;
+}
+.myForm__data img {
+  visibility: hidden;
+  position: absolute;
+  height: auto;
+  width: 30px;
+  right: 25px;
+  top: 26px;
+}
+.myForm__data.error input {
+  border: 2px solid #ff3d3d;
+}
+.myForm__data.error input::placeholder {
+  color: red;
+}
+.myForm__data.error img {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

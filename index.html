@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <main id="container">
+    <section id="sec1">
+      <div class="learn">
+        <h1 class="learn__title">Learn to code by watching others</h1>
+      </div>
+      <div class="learn">
+        <p class="learn__description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </div>
+    </section>
+    <section id="sec2">
+      <div class="btn btn--purple">
+        <button class="trial">
+          <span><b>Try it free 7 days</b> then $20/mo. thereafter</span>
+        </button>
+      </div>
+      <form  action="traitement.php" id="myForm">
+        <div class="myForm__data">
+          <input type="text" name="first" id="first" placeholder="First Name">
+          <img src="images/icon-error.svg" alt="">
+        </div>
+        <div class="myForm__data">
+          <input type="text" name="last" id="last" placeholder="Last Name">
+          <img src="images/icon-error.svg" alt="">
+        </div>
+        <div class="myForm__data">
+          <input type="email" name="email" id="email" placeholder="Email Address">
+          <img src="images/icon-error.svg" alt="">
+        </div>
+        <div class="myForm__data">
+          <input type="text" name="password" id="password" placeholder="Password">
+          <img src="images/icon-error.svg" alt="">
+        </div>
+        <div class="btn btn--green">
+          <button type ="submit" class="claim"><span>Claim your free trial</span></button>
+        </div>
+        <div class="eula">
+          <span class="eula__description">By clicking the button, you are agreeing to our<strong class="eula__terms">Terms and Services</strong></span>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a target="_blank" href="https://github.com/Volturuss?tab=repositories">Théo</a>.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

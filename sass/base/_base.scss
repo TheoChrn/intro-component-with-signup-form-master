@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url("../images/bg-intro-mobile.png");
+    background-color: $primary-color;
+}
+
+body, button, input{
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1{
+    font-weight: inherit;
+}
+
+#container{
+    width: 375px; 
+    margin: auto;
+    padding: 55px 0;
+    
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+
+.attribution a {
+    font-size: 11px;
+     color: hsl(228, 45%, 44%);
+}
+
