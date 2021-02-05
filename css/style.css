@@ -70,7 +70,11 @@ h1 {
 }
 
 /* components */
-button {
+.btn {
+  display: flex;
+  width: 100%;
+}
+.btn button {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -80,17 +84,11 @@ button {
   color: white;
   background-color: inherit;
 }
-button span {
-  margin: auto;
-}
-
-button:focus {
+.btn button:focus {
   outline: none;
 }
-
-.btn {
-  display: flex;
-  width: 100%;
+.btn button span {
+  margin: auto;
 }
 .btn .trial {
   padding: 20px;
@@ -150,35 +148,19 @@ section {
   margin: 25px 0 18px 0;
 }
 
-#myForm {
+#sec2 #myForm {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
   margin: 10px 0;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-#myForm .eula__terms {
-  font-weight: 600;
-  text-decoration: inherit;
-  color: #ff7a7a;
-  cursor: pointer;
-}
-#myForm .eula__description {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: #b9b6d3;
-}
-#myForm .eula__description, #myForm .eula strong {
-  font-size: 10px;
-}
-
-.myForm__data {
+#sec2 #myForm .myForm__data {
   display: flex;
   position: relative;
   overflow: hidden;
 }
-.myForm__data input {
+#sec2 #myForm .myForm__data input {
   border-radius: 10px;
   width: 100%;
   padding: 15px;
@@ -187,14 +169,14 @@ section {
   font-weight: 500;
   color: black;
 }
-.myForm__data input:focus {
+#sec2 #myForm .myForm__data input:focus {
   outline: none;
   border-color: #9d97c9;
 }
-.myForm__data input, .myForm__data input::placeholder {
+#sec2 #myForm .myForm__data input, #sec2 #myForm .myForm__data input::placeholder {
   text-indent: 20px;
 }
-.myForm__data img {
+#sec2 #myForm .myForm__data img {
   visibility: hidden;
   position: absolute;
   height: auto;
@@ -202,14 +184,29 @@ section {
   right: 25px;
   top: 26px;
 }
-.myForm__data.error input {
+#sec2 #myForm .myForm__data.error input {
   border: 2px solid #ff3d3d;
 }
-.myForm__data.error input::placeholder {
+#sec2 #myForm .myForm__data.error input::placeholder {
   color: red;
 }
-.myForm__data.error img {
+#sec2 #myForm .myForm__data.error img {
   visibility: visible;
+}
+#sec2 #myForm .eula__terms {
+  font-weight: 600;
+  text-decoration: inherit;
+  color: #ff7a7a;
+  cursor: pointer;
+}
+#sec2 #myForm .eula__description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #b9b6d3;
+}
+#sec2 #myForm .eula__description, #sec2 #myForm .eula strong {
+  font-size: 10px;
 }
 
 @media all and (min-width: 1024px) {
@@ -232,27 +229,14 @@ section {
     width: 90%;
   }
 
-  #myForm {
+  #sec2 #myForm {
     padding: 28px 40px 40px 40px;
   }
-  #myForm .eula {
-    flex-direction: row;
-  }
-  #myForm .eula__terms {
-    margin-left: 3px;
-  }
-  #myForm .eula__description {
-    margin: auto;
-    align-self: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .myForm__data {
+  #sec2 #myForm .myForm__data {
     display: flex;
     position: relative;
   }
-  .myForm__data input {
+  #sec2 #myForm .myForm__data input {
     border-radius: 10px;
     width: 100%;
     padding: 15px;
@@ -260,6 +244,18 @@ section {
     border: 2px solid rgba(128, 128, 128, 0.2);
     font-weight: 500;
     color: black;
+  }
+  #sec2 #myForm .eula {
+    flex-direction: row;
+  }
+  #sec2 #myForm .eula__terms {
+    margin-left: 3px;
+  }
+  #sec2 #myForm .eula__description {
+    margin: auto;
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
   }
 }
 

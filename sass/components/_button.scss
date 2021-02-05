@@ -1,26 +1,25 @@
-button{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    border: 0px;
-    width: 100%;
-    border-radius: $border-radius;
-    color: white;
-    background-color: inherit;
-
-
-    & span{
-        margin: auto;
-    }
-}
-
-button:focus{
-    outline:none;
-}
-
 .btn{
     display: flex;
     width: 100%;
+
+    button{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border: 0px;
+        width: 100%;
+        border-radius: $border-radius;
+        color: white;
+        background-color: inherit;
+    
+        &:focus{
+            outline:none;
+        }
+    
+        & span{
+            margin: auto;
+        }
+    }
 
     .trial{
         padding: 20px;
