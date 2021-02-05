@@ -29,6 +29,11 @@ h1 {
   padding: 55px 0;
 }
 
+@media all and (min-width: 426px) {
+  #container {
+    width: 100%;
+  }
+}
 @media all and (min-width: 1024px) {
   body {
     display: flex;

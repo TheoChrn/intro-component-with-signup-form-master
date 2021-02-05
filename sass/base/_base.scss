@@ -29,6 +29,12 @@ h1{
     
 }
 
+@media all and (min-width: 426px){
+    #container{
+        width: 100%; 
+    }
+}
+
 @media all and (min-width: 1024px){
     body{
         display: flex;
@@ -42,8 +48,7 @@ h1{
         justify-content: space-evenly;
         max-width: 1440px;
         width: 80%; 
-        padding: 60px 0;
-        
+        padding: 60px 0;  
     }
 
     footer{
